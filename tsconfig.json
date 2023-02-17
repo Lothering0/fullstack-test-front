@@ -5,7 +5,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true
   },
 
   "references": [

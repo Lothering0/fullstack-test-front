@@ -1,11 +1,11 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App.vue'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import { clickOutside } from "./directives";
+import App from "./App.vue";
 
-import './assets/main.css'
+import "./styles/main.css";
 
-const app = createApp(App)
-
-app.use(createPinia())
-
-app.mount('#app')
+const app = createApp(App);
+app.directive("click-outside", clickOutside);
+app.use(createPinia());
+app.mount('#app');
